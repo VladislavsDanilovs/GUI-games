@@ -140,6 +140,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void move() {
         for (int i = bodyParts; i >= 1; i--) {
+	//creating body parts by decrementing number 6 each iteration
             x[i] = x[i - 1];
             y[i] = y[i - 1];
         }
