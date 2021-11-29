@@ -1,0 +1,34 @@
+[1mdiff --git a/GameFrame.java b/GameFrame.java[m
+[1mindex 268e72a..7b86957 100644[m
+[1m--- a/GameFrame.java[m
+[1m+++ b/GameFrame.java[m
+[36m@@ -5,6 +5,8 @@[m [mimport java.awt.*;[m
+ import javax.swing.*;[m
+ import java.util.Random;[m
+ [m
+[32m+[m[32m//creating JFrame[m[41m [m
+[32m+[m
+ public class GameFrame extends JFrame {[m
+ [m
+     GameFrame(){[m
+[36m@@ -12,7 +14,7 @@[m [mpublic class GameFrame extends JFrame {[m
+         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);[m
+         this.pack();[m
+         this.setLocationRelativeTo(null);[m
+[31m-        this.setVisible(true);[m
+[32m+[m[32m        this.setVisible(false);[m
+     }[m
+     [m
+ }[m
+[1mdiff --git a/GamePanel.java b/GamePanel.java[m
+[1mindex d1360bf..a04c090 100644[m
+[1m--- a/GamePanel.java[m
+[1m+++ b/GamePanel.java[m
+[36m@@ -140,6 +140,7 @@[m [mpublic class GamePanel extends JPanel implements ActionListener {[m
+ [m
+     public void move() {[m
+         for (int i = bodyParts; i >= 1; i--) {[m
+[32m+[m	[32m//creating body parts by decrementing number 6 each iteration[m
+             x[i] = x[i - 1];[m
+             y[i] = y[i - 1];[m
+         }[m
